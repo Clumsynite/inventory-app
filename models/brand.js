@@ -10,4 +10,4 @@ brandSchema.virtual("url").get(function () {
   return "/brand/" + this._id;
 });
 
-module.exports = mongoose.model("Genre", brandSchema);
+module.exports = mongoose.model("Brand", brandSchema);
