@@ -2,4 +2,12 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+
+  if error
+    p Dynamic Content
+  else
+    p Inventory stats:
+
+    ul
+      li #[strong Items: ] !{data.items}
+      li #[strong Categories: ] !{data.category}
