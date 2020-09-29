@@ -196,45 +196,148 @@ function createItems(cb) {
         );
       },
 
-      // Samsung
+      // Samsung - 13 Items
       (callback) => {
-        itemCreate('Galaxy M21 (Midnight Blue, 4GB RAM, 64GB Storage)', brand[1], 40, 13999, new Date(), callback);
+        itemCreate(
+          "Galaxy M21 (Midnight Blue, 4GB RAM, 64GB Storage)",
+          brand[1],
+          40,
+          13999,
+          new Date(),
+          callback
+        );
       },
       (callback) => {
-        itemCreate('Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)', brand[1], 45, 17499, new Date(), callback);
+        itemCreate(
+          "Galaxy M31 (Ocean Blue, 6GB RAM, 128GB Storage)",
+          brand[1],
+          45,
+          17499,
+          new Date(),
+          callback
+        );
       },
       (callback) => {
-        itemCreate('Galaxy M31s (Mirage Blue, 6GB RAM, 64GB Storage)', brand[1], 26, 19499, new Date(), callback);
+        itemCreate(
+          "Galaxy M31s (Mirage Blue, 6GB RAM, 64GB Storage)",
+          brand[1],
+          26,
+          19499,
+          new Date(),
+          callback
+        );
       },
       (callback) => {
-        itemCreate('Galaxy M51 (Electric Blue, 6GB RAM, 128GB Storage)', brand[1], 40, 24999, new Date(), callback);
+        itemCreate(
+          "Galaxy M51 (Electric Blue, 6GB RAM, 128GB Storage)",
+          brand[1],
+          40,
+          24999,
+          new Date(),
+          callback
+        );
       },
       (callback) => {
-        itemCreate('Galaxy M01 (Black, 3GB RAM, 32GB Storage)', brand[1], 40, 7999, new Date(), callback);
+        itemCreate(
+          "Galaxy M01 (Black, 3GB RAM, 32GB Storage)",
+          brand[1],
+          40,
+          7999,
+          new Date(),
+          callback
+        );
       },
       (callback) => {
-        itemCreate('Galaxy M11 (Metallic Blue, 4GB RAM, 64GB Storage)', brand[1], 20, 11999, new Date(), callback);
+        itemCreate(
+          "Galaxy M11 (Metallic Blue, 4GB RAM, 64GB Storage)",
+          brand[1],
+          20,
+          11999,
+          new Date(),
+          callback
+        );
       },
       (callback) => {
-        itemCreate('Galaxy M01s (Blue, 3GB RAM, 32GB Storage)', brand[1], 40, 9499, new Date(), callback);
+        itemCreate(
+          "Galaxy M01s (Blue, 3GB RAM, 32GB Storage)",
+          brand[1],
+          40,
+          9499,
+          new Date(),
+          callback
+        );
       },
       (callback) => {
-        itemCreate('Galaxy A21s (Blue, 4GB RAM, 64GB Storage)', brand[1], 30, 14999, new Date(), callback);
+        itemCreate(
+          "Galaxy A21s (Blue, 4GB RAM, 64GB Storage)",
+          brand[1],
+          30,
+          14999,
+          new Date(),
+          callback
+        );
       },
       (callback) => {
-        itemCreate('Galaxy A71 (Prism Crush, 4GB RAM, 64GB Storage)', brand[1], 40, 13999, new Date(), callback);
+        itemCreate(
+          "Galaxy A71 (Prism Crush, 8GB RAM, 128GB Storage)",
+          brand[1],
+          40,
+          29999,
+          new Date(),
+          callback
+        );
       },
       (callback) => {
-        itemCreate('Galaxy M21 (Midnight Blue, 4GB RAM, 64GB Storage)', brand[1], 40, 13999, new Date(), callback);
+        itemCreate(
+          "Galaxy Note10 lite (Aura Glow, 8GB RAM, 128GB Storage)",
+          brand[1],
+          40,
+          39999,
+          new Date(),
+          callback
+        );
       },
       (callback) => {
-        itemCreate('Galaxy M21 (Midnight Blue, 4GB RAM, 64GB Storage)', brand[1], 40, 13999, new Date(), callback);
+        itemCreate(
+          "Galaxy Z Fold2 5G (Mystic Bronze, 12GB RAM, 25GB Storage)",
+          brand[1],
+          8,
+          14999,
+          new Date(),
+          callback
+        );
       },
       (callback) => {
-        itemCreate('Galaxy M21 (Midnight Blue, 4GB RAM, 64GB Storage)', brand[1], 40, 13999, new Date(), callback);
+        itemCreate(
+          "Galaxy S10 Plus (Black, 8GB RAM, 128GB Storage)",
+          brand[1],
+          30,
+          52999,
+          new Date(),
+          callback
+        );
       },
       (callback) => {
-        itemCreate('Galaxy M21 (Midnight Blue, 4GB RAM, 64GB Storage)', brand[1], 40, 13999, new Date(), callback);
+        itemCreate(
+          "Galaxy Note 20 Ultra (Mystic Bronze, 12GB RAM, 256GB Storage)",
+          brand[1],
+          10,
+          104999,
+          new Date(),
+          callback
+        );
+      },
+
+      //OnePlus
+      (callback) => {
+        itemCreate(
+          "Galaxy Note 20 Ultra (Mystic Bronze, 12GB RAM, 256GB Storage)",
+          brand[1],
+          10,
+          104999,
+          new Date(),
+          callback
+        );
       },
     ],
     cb
