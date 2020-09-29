@@ -6,6 +6,6 @@ const brandController = require('../controllers/brandController');
 
 router.get('/', itemController.index)
 
-router.get('/items', itemController.item_list)
+router.get('/item', itemController.item_list)
 
 module.exports = router;
