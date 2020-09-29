@@ -559,6 +559,7 @@ function createItems(cb) {
         );
       },
 
+      // HTC - 0 item to test if a brand has no items
     ],
     cb
   );
