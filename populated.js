@@ -527,7 +527,37 @@ function createItems(cb) {
         );
       },
 
-      
+      // ASUS - 3 items
+      (callback) => {
+        itemCreate(
+          "Zenfone Max M2 (Black, 3GB RAM, 32GB Storage)",
+          brand[6],
+          20,
+          7999,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "Zenfone 3 (Gold, 3GB RAM, 32GB Storage)",
+          brand[6],
+          21,
+          13999,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "Zenfone Max M1 (Gold, 3GB RAM, 32GB Storage)",
+          brand[6],
+          12,
+          6999,
+          new Date(),
+          callback
+        );
+      },
 
     ],
     cb
