@@ -79,15 +79,6 @@ const createGenre = (cb) => {
         brandCreate("Redmi", callback);
       },
       (callback) => {
-        brandCreate("Oppo", callback);
-      },
-      (callback) => {
-        brandCreate("Vivo", callback);
-      },
-      (callback) => {
-        brandCreate("Realme", callback);
-      },
-      (callback) => {
         brandCreate("Motorola", callback);
       },
       (callback) => {
@@ -463,11 +454,10 @@ function createItems(cb) {
       },
 
       // Redmi - 3 Items
-      
       (callback) => {
         itemCreate(
           "9 (Carbon, 4GB RAM, 64GB Storage)",
-          brand[3],
+          brand[4],
           30,
           8999,
           new Date(),
@@ -477,7 +467,7 @@ function createItems(cb) {
       (callback) => {
         itemCreate(
           "8A Dual (Sea Blue, 2GB RAM, 32GB Storage)",
-          brand[3],
+          brand[4],
           30,
           7499,
           new Date(),
@@ -487,13 +477,58 @@ function createItems(cb) {
       (callback) => {
         itemCreate(
           "K20 Pro (Flame Red, 6GB RAM, 128GB Storage)",
-          brand[3],
+          brand[4],
           10,
           23501,
           new Date(),
           callback
         );
       },
+
+      // Motorola - 4 items
+      (callback) => {
+        itemCreate(
+          "G Plus, 4th Gen (White, 32GB Storage)",
+          brand[5],
+          30,
+          9800,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "Raz Gold (Gold, 6GB RAM)",
+          brand[5],
+          3,
+          114400,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "Edge+ (Thunder Grey, 12GB RAM, 256GB Storage)",
+          brand[5],
+          10,
+          72490,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "Razr (Black, 6GB RAM, 128GB Storage)",
+          brand[5],
+          30,
+          7499,
+          new Date(),
+          callback
+        );
+      },
+
+      
+
     ],
     cb
   );
