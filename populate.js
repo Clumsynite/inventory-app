@@ -33,14 +33,13 @@ const brandCreate = (name, cb) => {
 }
 
 
-const itemCreate = (name, brand, inStock, price, added, photo, cb) => {
+const itemCreate = (name, brand, inStock, price, added, cb) => {
   itemDetail = {
     name: name,
     brand: brand,
     price: price,
     inStock: inStock,
     added: added,
-    photo: photo
   };
 
   const item = new Item(itemDetail);
@@ -99,7 +98,6 @@ function createItems(cb) {
           10,
           53500,
           new Date(),
-          "https://m.media-amazon.com/images/I/51qBzX0pGYL._AC_UY218_.jpg",
           callback
         );
       },
@@ -110,7 +108,6 @@ function createItems(cb) {
           15,
           47500,
           new Date(),
-          "https://m.media-amazon.com/images/I/51cCOStn+rL._AC_UY218_.jpg",
           callback
         );
       },
@@ -121,7 +118,6 @@ function createItems(cb) {
           20,
           27799,
           new Date(),
-          "https://m.media-amazon.com/images/I/41D9NDiSzjL._AC_UY218_.jpg",
           callback
         );
       },
@@ -132,7 +128,6 @@ function createItems(cb) {
           27,
           39999,
           new Date(),
-          "https://m.media-amazon.com/images/I/51MmoFoNuoL._AC_UY218_.jpg",
           callback
         );
       },
@@ -153,7 +148,6 @@ function createItems(cb) {
           12,
           96990,
           new Date(),
-          "https://m.media-amazon.com/images/I/61m6DjujESL._AC_UY218_.jpg",
           callback
         );
       },
@@ -164,7 +158,6 @@ function createItems(cb) {
           4,
           75900,
           new Date(),
-          "https://m.media-amazon.com/images/I/51o5RmQtroL._AC_UY218_.jpg",
           callback
         );
       },
@@ -175,7 +168,6 @@ function createItems(cb) {
           2,
           150800,
           new Date(),
-          "https://m.media-amazon.com/images/I/61tuQdl2yLL._AC_UY218_.jpg",
           callback
         );
       },
@@ -186,7 +178,6 @@ function createItems(cb) {
           5,
           84900,
           new Date(),
-          "https://m.media-amazon.com/images/I/516GyFgGHQL._AC_UY218_.jpg",
           callback
         );
       },
@@ -199,7 +190,6 @@ function createItems(cb) {
           40,
           13999,
           new Date(),
-          "https://m.media-amazon.com/images/I/71dujTTJDZL._AC_UY218_.jpg",
           callback
         );
       },
@@ -210,7 +200,6 @@ function createItems(cb) {
           45,
           17499,
           new Date(),
-          "https://m.media-amazon.com/images/I/71-Su4Wr0HL._AC_UY218_.jpg",
           callback
         );
       },
@@ -221,7 +210,6 @@ function createItems(cb) {
           26,
           19499,
           new Date(),
-          "https://m.media-amazon.com/images/I/61d-phh4GfL._AC_UY218_.jpg",
           callback
         );
       },
@@ -232,7 +220,6 @@ function createItems(cb) {
           40,
           24999,
           new Date(),
-          "https://m.media-amazon.com/images/I/710weRkP-nL._AC_UY218_.jpg",
           callback
         );
       },
@@ -243,7 +230,6 @@ function createItems(cb) {
           40,
           7999,
           new Date(),
-          "https://m.media-amazon.com/images/I/81onqHVeECL._AC_UY218_.jpg",
           callback
         );
       },
@@ -264,7 +250,6 @@ function createItems(cb) {
           40,
           9499,
           new Date(),
-          "https://m.media-amazon.com/images/I/712MlLutKGL._AC_UY218_.jpg",
           callback
         );
       },
@@ -275,7 +260,6 @@ function createItems(cb) {
           30,
           14999,
           new Date(),
-          "https://m.media-amazon.com/images/I/811RH5e-snL._AC_UY218_.jpg",
           callback
         );
       },
@@ -286,7 +270,6 @@ function createItems(cb) {
           40,
           29499,
           new Date(),
-          "https://m.media-amazon.com/images/I/71qI1h+05qL._AC_UY218_.jpg",
           callback
         );
       },
@@ -297,7 +280,6 @@ function createItems(cb) {
           40,
           39999,
           new Date(),
-          "https://m.media-amazon.com/images/I/71T0KJFxCHL._AC_UY218_.jpg",
           callback
         );
       },
@@ -308,7 +290,6 @@ function createItems(cb) {
           8,
           14999,
           new Date(),
-          "https://m.media-amazon.com/images/I/71U9nzW+XsL._AC_UY218_.jpg",
           callback
         );
       },
@@ -319,7 +300,6 @@ function createItems(cb) {
           30,
           52999,
           new Date(),
-          "https://m.media-amazon.com/images/I/619jtWsN0cL._AC_UY218_.jpg",
           callback
         );
       },
@@ -330,7 +310,6 @@ function createItems(cb) {
           10,
           104999,
           new Date(),
-          "https://m.media-amazon.com/images/I/81afQk-7AjL._AC_UY218_.jpg",
           callback
         );
       },
@@ -343,7 +322,6 @@ function createItems(cb) {
           39,
           29999,
           new Date(),
-          "https://m.media-amazon.com/images/I/719CgfLcqNL._AC_UY218_.jpg",
           callback
         );
       },
@@ -354,7 +332,6 @@ function createItems(cb) {
           29,
           41999,
           new Date(),
-          "https://m.media-amazon.com/images/I/71ncRs6HzyL._AC_UY218_.jpg",
           callback
         );
       },
@@ -365,7 +342,6 @@ function createItems(cb) {
           35,
           43999,
           new Date(),
-          "https://m.media-amazon.com/images/I/61FRLa8IFTL._AC_UY218_.jpg",
           callback
         );
       },
@@ -376,7 +352,6 @@ function createItems(cb) {
           19,
           54999,
           new Date(),
-          "https://m.media-amazon.com/images/I/619iTNHSCGL._AC_UY218_.jpg",
           callback
         );
       },
@@ -387,7 +362,6 @@ function createItems(cb) {
           25,
           26999,
           new Date(),
-          "https://m.media-amazon.com/images/I/81qqBAKRhTL._AC_UY218_.jpg",
           callback
         );
       },
@@ -398,7 +372,6 @@ function createItems(cb) {
           39,
           23999,
           new Date(),
-          "https://m.media-amazon.com/images/I/81YgdWkOP0L._AC_UY218_.jpg",
           callback
         );
       },
@@ -411,7 +384,6 @@ function createItems(cb) {
           30,
           13999,
           new Date(),
-          "https://m.media-amazon.com/images/I/61L1ItFgFHL._AC_UY218_.jpg",
           callback
         );
       },
@@ -422,7 +394,6 @@ function createItems(cb) {
           40,
           8650,
           new Date(),
-          "https://m.media-amazon.com/images/I/41gAZdQUyZL._AC_UY218_.jpg",
           callback
         );
       },
@@ -433,7 +404,6 @@ function createItems(cb) {
           23,
           7499,
           new Date(),
-          "https://m.media-amazon.com/images/I/71Vh6ktdqML._AC_UY218_.jpg",
           callback
         );
       },
@@ -444,7 +414,6 @@ function createItems(cb) {
           25,
           11499,
           new Date(),
-          "https://m.media-amazon.com/images/I/81YTUmk8zCL._AC_UY218_.jpg",
           callback
         );
       },
@@ -455,7 +424,6 @@ function createItems(cb) {
           35,
           10690,
           new Date(),
-          "https://m.media-amazon.com/images/I/81dOOs7xhLL._AC_UY218_.jpg",
           callback
         );
       },
@@ -466,7 +434,6 @@ function createItems(cb) {
           32,
           19999,
           new Date(),
-          "https://m.media-amazon.com/images/I/41JwOxahweL._AC_UY218_.jpg",
           callback
         );
       },
@@ -477,7 +444,6 @@ function createItems(cb) {
           20,
           34875,
           new Date(),
-          "https://m.media-amazon.com/images/I/41UZcsc47KL._AC_UY218_.jpg",
           callback
         );
       },
@@ -490,7 +456,6 @@ function createItems(cb) {
           30,
           8999,
           new Date(),
-          "https://m.media-amazon.com/images/I/71uZrDPrsRL._AC_UY218_.jpg",
           callback
         );
       },
@@ -501,7 +466,6 @@ function createItems(cb) {
           30,
           7499,
           new Date(),
-          "https://m.media-amazon.com/images/I/71h+C9wJCjL._AC_UY218_.jpg",
           callback
         );
       },
@@ -512,7 +476,6 @@ function createItems(cb) {
           10,
           23501,
           new Date(),
-          "https://m.media-amazon.com/images/I/71yNpxGXbML._AC_UY218_.jpg",
           callback
         );
       },
@@ -525,7 +488,6 @@ function createItems(cb) {
           30,
           9800,
           new Date(),
-          "https://m.media-amazon.com/images/I/81voLtCcvQL._AC_UY218_.jpg",
           callback
         );
       },
@@ -536,7 +498,6 @@ function createItems(cb) {
           3,
           114400,
           new Date(),
-          "https://m.media-amazon.com/images/I/41ATfn4H+aL._AC_UY218_.jpg",
           callback
         );
       },
@@ -547,7 +508,6 @@ function createItems(cb) {
           10,
           72490,
           new Date(),
-          "https://m.media-amazon.com/images/I/312uzH0HoML._AC_UY218_.jpg",
           callback
         );
       },
@@ -558,7 +518,6 @@ function createItems(cb) {
           30,
           96000,
           new Date(),
-          "https://m.media-amazon.com/images/I/31mqujr+QaL._AC_UY218_.jpg",
           callback
         );
       },
@@ -571,7 +530,6 @@ function createItems(cb) {
           20,
           7999,
           new Date(),
-          "https://images-na.ssl-images-amazon.com/images/I/415SN0A4fBL.jpg",
           callback
         );
       },
@@ -582,7 +540,6 @@ function createItems(cb) {
           21,
           13999,
           new Date(),
-          "https://m.media-amazon.com/images/I/71V6X8mZrgL._AC_UY218_.jpg",
           callback
         );
       },
@@ -593,7 +550,6 @@ function createItems(cb) {
           12,
           6999,
           new Date(),
-          "https://images-na.ssl-images-amazon.com/images/I/41KoB26JpFL.jpg",
           callback
         );
       },
