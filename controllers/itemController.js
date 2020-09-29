@@ -16,3 +16,12 @@ exports.index = (req, res, next) => {
     console.log(results);
   })
 }
+
+exports.item_list = (req, res, next) => {
+  Item.find({})
+  .populate('brand')
+  .exec((err, items) => {
+    if (err) { return next(err); }
+    res.render('item_list', { title: 'Items', item_list: items });
+  })
+}
