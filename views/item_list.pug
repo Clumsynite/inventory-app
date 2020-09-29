@@ -6,7 +6,7 @@ block content
     each item in item_list
       div.col.mb-5
         div.card.h-100
-          img.card-img-top(src="https://images-na.ssl-images-amazon.com/images/I/71yXShgxvpL._SL1500_.jpg")
+          img.card-img-top(src=item.photo)
           div.card-body
             h5.card-title #{item.name}
             p.text-muted #{item.brand.name}
@@ -14,3 +14,9 @@ block content
             p.card-text #[Strong Quantity: ] #{item.inStock}
           dv.card-footer
             a.btn.btn-outline-info.btn-block(href=`/item/${item.id}/view`) #{'View '+ item.item_name}
+
+
+    else
+      div.card
+        div.card-body 
+          h2.card-title Inventory is currently empy
