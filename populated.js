@@ -328,13 +328,63 @@ function createItems(cb) {
         );
       },
 
-      //OnePlus
+      //OnePlus - 6 items
       (callback) => {
         itemCreate(
-          "Galaxy Note 20 Ultra (Mystic Bronze, 12GB RAM, 256GB Storage)",
-          brand[1],
-          10,
-          104999,
+          "OnePlus Nord 5G (Gray Onyx, 12GB RAM, 256GB Storage)",
+          brand[2],
+          39,
+          29999,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "OnePlus 7T (Glacier Blue, 6GB RAM, 128 Storage)",
+          brand[2],
+          29,
+          41999,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "OnePlus 7T (Haze Blue, 8GB RAM, 256GB Storage)",
+          brand[2],
+          35,
+          43999,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "OnePlus 8 Pro (Glacier Green, 8GB RAM, 128GB Storage)",
+          brand[2],
+          19,
+          54999,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "OnePlus 5T (Midnight Black, 6GB RAM, 64GB Storage)",
+          brand[2],
+          25,
+          26999,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "OnePlus 6 (Mirror Black, 6GB RAM, 64GB Storage)",
+          brand[2],
+          39,
+          20495,
           new Date(),
           callback
         );
@@ -342,6 +392,8 @@ function createItems(cb) {
     ],
     cb
   );
+
+  //
 }
 
 async.series(
