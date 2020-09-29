@@ -8,6 +8,7 @@ const ItemSchema = new Schema({
   inStock: { type: Number, default: 1 },
   price: { type: Number, default: 0 },
   added: { type: Date, default: Date.now },
+  photo: {type: String, defalut: 'https://images-na.ssl-images-amazon.com/images/I/71yXShgxvpL._SL1500_.jpg'}
 });
 
 ItemSchema.virtual("url").get(function () {
