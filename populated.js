@@ -389,11 +389,114 @@ function createItems(cb) {
           callback
         );
       },
+      
+      //Nokia - 7 Items
+      (callback) => {
+        itemCreate(
+          "Nokia 5.3 (Charcoal, 4GB RAM, 64GB Storage)",
+          brand[3],
+          30,
+          13999,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "Nokia 2.3 (Charcoal, 2GB RAM, 32GB Storage)",
+          brand[3],
+          40,
+          8650,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "Nokia C3 (Black, 2GB RAM, 16GB Storage)",
+          brand[3],
+          23,
+          7499,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "Nokia 4.2 (Black, 3GB RAM, 32GB Storage)",
+          brand[3],
+          25,
+          11999,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "Nokia 3.2 (Black, 3GB RAM, 32GB Storage)",
+          brand[3],
+          35,
+          10690,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "Nokia 7.2 (Cyan Green, 4GB RAM, 64GB Storage)",
+          brand[3],
+          32,
+          19999,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "Nokia 9 PureView (Blue, 6GB RAM, 128GB Storage)",
+          brand[3],
+          20,
+          34875,
+          new Date(),
+          callback
+        );
+      },
+
+      // Redmi - 3 Items
+      
+      (callback) => {
+        itemCreate(
+          "9 (Carbon, 4GB RAM, 64GB Storage)",
+          brand[3],
+          30,
+          8999,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "8A Dual (Sea Blue, 2GB RAM, 32GB Storage)",
+          brand[3],
+          30,
+          7499,
+          new Date(),
+          callback
+        );
+      },
+      (callback) => {
+        itemCreate(
+          "K20 Pro (Flame Red, 6GB RAM, 128GB Storage)",
+          brand[3],
+          10,
+          23501,
+          new Date(),
+          callback
+        );
+      },
     ],
     cb
   );
-
-  //
 }
 
 async.series(
