@@ -110,3 +110,24 @@ exports.item_update_post = (req, res, next) => {
     res.redirect(data.url);
   })
 };
+
+exports.item_delete_get = (req, res, next) => {
+  Item.findById(req.params.id).exec((err, data) => {
+    if (err) { return next(err); }
+    if (data==null) { 
+        res.redirect('/item');
+    }
+    res.render('item_delete', { title: `Delete ${data.name}`, item: data} )
+  })
+}
+
+exports.item_delete_post = (req, res, next) => {
+  Item.findById(req.params.id)
+  .exec((err, data) => {
+    if (err) { return next(err); }
+    Item.findByIdAndRemove(req.body.itemid, (err) => {
+        if (err) { return next(err); }
+        res.redirect('/item')
+    })
+  })
+}
