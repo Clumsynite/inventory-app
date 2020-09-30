@@ -40,7 +40,7 @@ app.use(function(err, req, res, next) {
 const mongoose = require('mongoose')
 const mongoDB = process.env.MONGO_URL || process.env.MONGO_URI
 
-mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false });
 
 
 const db = mongoose.connection
