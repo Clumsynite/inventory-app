@@ -4,7 +4,7 @@ block content
   form(action="" method="POST")
     div.form-group
       label(for="name") Enter Brand Name
-      input.form-control#name(type='text' name="name" required="true" placeholder="Sample Brand")
+      input.form-control#name(type='text' name="name" required="true" placeholder="Sample Brand" value=(undefined==brand ? '' : brand.name))
 
     button.btn.btn-outline-primary.btn-block(type="submit") Add this Item
 
