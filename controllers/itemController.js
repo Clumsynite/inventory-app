@@ -59,5 +59,16 @@ exports.item_new_get = (req, res, next) => {
 };
 
 exports.item_new_post = (req, res, next) => {
-  
-}
+  const item = new Item({
+    name: req.body.name,
+    brand: req.body.brand,
+    price: req.body.price,
+    inStock: req.body.quantity,
+    added: new Date()
+  });
+
+  item.save((err, data) => {
+    if (err) { return next(err) }
+    res.redirect(item.url)
+  })
+};
