@@ -18,6 +18,10 @@ router.get('/item/:id/update', itemController.item_update_get)
 
 router.post('/item/:id/update', itemController.item_update_post)
 
+router.get('/item/:id/delete', itemController.item_delete_get)
+
+router.post('/item/:id/delete', itemController.item_delete_post)
+
 router.get('/brand/:id/view', brandController.brand_view)
 
 router.get('/brand/new', brandController.brand_new_get)
@@ -27,5 +31,9 @@ router.post('/brand/new', brandController.brand_new_post)
 router.get('/brand/:id/update', brandController.brand_update_get)
 
 router.post('/brand/:id/update', brandController.brand_update_post)
+
+router.get('/brand/:id/delete', brandController.brand_delete_get)
+
+router.post('/brand/:id/delete', brandController.brand_delete_post)
 
 module.exports = router;
