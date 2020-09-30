@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  form(action="" method="POST")
+    div.form-group
+      label(for="name") Enter Brand Name
+      input.form-control#name(type='text' name="name" required="true" placeholder="Sample Brand")
+
+    button.btn.btn-outline-primary.btn-block(type="submit") Add this Item
+
+  if errors
+    ul
+      for error in errors
+        li!= error.msg
+    
+    
