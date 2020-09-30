@@ -25,3 +25,7 @@ exports.item_list = (req, res, next) => {
     }
   );
 };
+
+exports.item_view = (req, res, next) => {
+  
+}
