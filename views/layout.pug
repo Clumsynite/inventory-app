@@ -5,6 +5,22 @@ html
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
-  body
+  body  
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      a.navbar-brand(href="/") Clumsyknight's Inventory
+      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      div.collapse.navbar-collapse#navbarText
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link(href='/item') View Items
+          li.nav-item
+            a.nav-link(href='/brand') View Brands
+
     div.container
       block content
+    
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
+
