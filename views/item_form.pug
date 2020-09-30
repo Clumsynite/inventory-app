@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  form(action="" method="POST")
+    div.form-group
+      label(for="name") Enter Item Name
+      input.form-control#name(type='text' name="name" required="true" placeholder="iPhone XR")
+    div.form-group
+      label(for="brand") Select a Brand
+      select.form-control#brand(type="select" name="brand"  placeholder='Select author' required="true")
+        for brand in brands
+          if item  
+            option(
+              value=brand._id
+              selected=(
+                brand._id.toString()==item.brand._id
+                || brand._id.toString()==item.brand
+              ) ? 'selected' : false
+            ) #{brand.name}
+          else
+            option(value=brand._id) #{brand.name}
+    div.form-group
+      label(for="price") Enter a Price (INR)
+      input.form-control#price(type="Number" name="price" min='1000' required="true" placeholder="47500")
+    div.form-group
+      label(for="quantity") Enter the quantity in Stock
+      input.form-control#quantity(type="Number" name="quantity" min='1' required="true" placeholder="10")
+    button.btn.btn-outline-primary.btn-block(type="submit") Add this Item
+
+  if errors
+    ul
+      for error in errors
+        li!= error.msg
+    
+    
