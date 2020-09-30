@@ -1,4 +1,3 @@
-block variables
 doctype html
 html
   head
@@ -19,8 +18,9 @@ html
             a.nav-link.dropdown-toggle#navbarDropdownMenuLink(role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
             href='#') View Brands
             div.dropdown-menu(aria-labelledby="navbarDropdownMenuLink")
-              each brand in brands
-                a.dropdown-item.text-info(href=`/brand/${brand.name}/view`) #{brand.name}
+              if brands
+                each brand in brands
+                  a.dropdown-item.text-info(href=`/brand/${brand.name}/view`) #{brand.name}
               else 
                 a.dropdown-item(href=`/brand`) All Brands
 
