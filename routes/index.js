@@ -8,6 +8,8 @@ router.get('/', (req, res, next) => {res.redirect('/item')})
 
 router.get('/item', itemController.item_list)
 
-router.get('/brand', brandController.brand_list)
+router.get('/item/:id/view', itemController.item_view)
+
+router.get('/brand/:id/view', brandController.brand_view)
 
 module.exports = router;
