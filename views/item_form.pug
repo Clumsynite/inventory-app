@@ -4,7 +4,7 @@ block content
   form(action="" method="POST")
     div.form-group
       label(for="name") Enter Item Name
-      input.form-control#name(type='text' name="name" required="true" placeholder="iPhone XR")
+      input.form-control#name(type='text' name="name" required="true" placeholder="iPhone XR" value=(undefined===item ? '' : item.name))
     div.form-group
       label(for="brand") Select a Brand
       select.form-control#brand(type="select" name="brand"  placeholder='Select author' required="true")
@@ -21,11 +21,11 @@ block content
             option(value=brand._id) #{brand.name}
     div.form-group
       label(for="price") Enter a Price (INR)
-      input.form-control#price(type="Number" name="price" min='1000' required="true" placeholder="47500")
+      input.form-control#price(type="Number" name="price" min='1000' required="true" placeholder="47500" value=(undefined===item ? '' : item.price))
     div.form-group
       label(for="quantity") Enter the quantity in Stock
-      input.form-control#quantity(type="Number" name="quantity" min='1' required="true" placeholder="10")
-    button.btn.btn-outline-primary.btn-block(type="submit") Add this Item
+      input.form-control#quantity(type="Number" name="quantity" min='1' required="true" placeholder="10" value=(undefined===item ? '' : item.inStock))
+    button.btn.btn-outline-primary.btn-block(type="submit") Submit
 
   if errors
     ul
