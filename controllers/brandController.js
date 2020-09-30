@@ -22,6 +22,7 @@ exports.brand_view = (req, res, next) => {
       }
       res.render("brand_view", {
         title: data.brand.name,
+        brand: data.brand,
         item_list: data.brand_items,
         brands: data.brands,
       });
@@ -34,5 +35,18 @@ exports.brand_new_get = (req, res, next) => {
 }
 
 exports.brand_new_post = (req, res, next) => {
-  res.render('brand_form', {title: 'New Brand'}) 
+  const brand = new Brand({name: req.body.name})
+
+  Brand.findOne({'name': req.body.name})
+  .exec((err, found) => {
+    if (err) { return next(err) }
+    if(found) {
+      res.redirect(found.url)
+    }else {
+      brand.save((err) => {
+        if (err) {return next(err)}
+        res.redirect(brand.url)
+      })
+    }
+  })
 }
