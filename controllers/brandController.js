@@ -31,22 +31,50 @@ exports.brand_view = (req, res, next) => {
 };
 
 exports.brand_new_get = (req, res, next) => {
-  res.render('brand_form', {title: 'New Brand'}) 
-}
+  res.render("brand_form", { title: "New Brand" });
+};
 
 exports.brand_new_post = (req, res, next) => {
-  const brand = new Brand({name: req.body.name})
+  const brand = new Brand({ name: req.body.name });
 
-  Brand.findOne({'name': req.body.name})
-  .exec((err, found) => {
-    if (err) { return next(err) }
-    if(found) {
-      res.redirect(found.url)
-    }else {
-      brand.save((err) => {
-        if (err) {return next(err)}
-        res.redirect(brand.url)
-      })
+  Brand.findOne({ name: req.body.name }).exec((err, found) => {
+    if (err) {
+      return next(err);
     }
+    if (found) {
+      res.redirect(found.url);
+    } else {
+      brand.save((err) => {
+        if (err) {
+          return next(err);
+        }
+        res.redirect(brand.url);
+      });
+    }
+  });
+};
+
+exports.brand_update_get = (req, res, next) => {
+  Brand.findById(req.params.id).exec((err, data) => {
+    if (err) {
+      return next(err);
+    }
+    if (data == null) {
+      const err = new error("Brand not found");
+      err.status = 404;
+      return next(err);
+    }
+    res.render("brand_form", { title: "Update Brand", brand: data });
+  });
+};
+
+exports.brand_update_post = (req, res, next) => {
+  const brand = new Brand({
+    name: req.body.name,
+    _id: req.params.id
+  }) 
+  Brand.findByIdAndUpdate(req.params.id, brand, {}, (err, data) => {
+    if (err) {return next(err)}
+    res.redirect(brand.url)
   })
-}
+};
