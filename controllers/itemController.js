@@ -12,9 +12,12 @@ exports.index = (req, res, next) => {
       brand: (callback) => {
         Brand.countDocuments({}, callback);
       },
+      brands: callback => {
+        Brand.find({}, callback)
+      }
     },
     (err, results) => {
-      res.render("index", { title: "Inventory", data: results, error: err });
+      res.render("index", { title: "Inventory", data: results, error: err, brands: results.brands });
     }
   );
 };
