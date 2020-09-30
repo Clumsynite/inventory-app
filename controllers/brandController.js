@@ -28,3 +28,11 @@ exports.brand_view = (req, res, next) => {
     }
   );
 };
+
+exports.brand_new_get = (req, res, next) => {
+  res.render('brand_form', {title: 'New Brand'}) 
+}
+
+exports.brand_new_post = (req, res, next) => {
+  res.render('brand_form', {title: 'New Brand'}) 
+}
