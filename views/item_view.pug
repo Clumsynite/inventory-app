@@ -10,5 +10,5 @@ block content
       p.card-text #[Strong Price: ] #{item.price_formatted} INR
       p.card-text #[Strong Quantity: ] #{item.inStock}
     dv.card-footer
-      a.btn.btn-outline-info.btn-block(href=`/item/${item._id}/view`) #{'View '+ item.item_name}
+      a.btn.btn-outline-primary.btn-block(href=`/item/${item._id}/update`) #{'Update '+ item.item_name}
     a.btn.btn-block.btn-outline-dark(href='/') Back to Home
