@@ -48,3 +48,16 @@ exports.item_view = (req, res, next) => {
     }
   );
 };
+
+exports.item_new_get = (req, res, next) => {
+  Brand.find({}, (err, data) => {
+    if (err) {
+      return next(err);
+    }
+    res.render("item_form", { title: "New Item", brands: data });
+  });
+};
+
+exports.item_new_post = (req, res, next) => {
+  
+}
