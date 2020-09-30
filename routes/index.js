@@ -8,4 +8,6 @@ router.get('/', itemController.index)
 
 router.get('/item', itemController.item_list)
 
+router.get('/brand', brandController.brand_list)
+
 module.exports = router;
