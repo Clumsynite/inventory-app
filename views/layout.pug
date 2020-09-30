@@ -20,7 +20,7 @@ html
             div.dropdown-menu(aria-labelledby="navbarDropdownMenuLink")
               if brands
                 each brand in brands
-                  a.dropdown-item.text-info(href=`/brand/${brand.name}/view`) #{brand.name}
+                  a.dropdown-item.text-info(href=`/brand/${brand._id}/view`) #{brand.name}
               else 
                 a.dropdown-item(href=`/brand`) All Brands
 
