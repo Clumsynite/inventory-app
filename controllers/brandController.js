@@ -78,3 +78,11 @@ exports.brand_update_post = (req, res, next) => {
     res.redirect(brand.url)
   })
 };
+
+exports.brand_delete_get = (req, res, next) => {
+
+}
+
+exports.brand_delete_post = (req, res, next) => {
+  
+}
