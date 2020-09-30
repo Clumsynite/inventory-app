@@ -47,6 +47,4 @@ const db = mongoose.connection
 
 db.on('error', console.error.bind(console, 'MongoDB connection error: '))
 
-console.log(process.env.MONGODB_URI)
-
 module.exports = app;
