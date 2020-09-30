@@ -14,5 +14,9 @@ block content
               p.card-text #[Strong Quantity: ] #{item.inStock}
             dv.card-footer
               a.btn.btn-outline-info.btn-block(href=`/item/${item._id}/view`) #{'View '+ item.item_name}
+      else
+        h1 This brand hasn't registered any items yet 
 
+
+    a.btn.btn-block.btn-outline-info.mg-20(href=`/brand/${brand._id}/update`) Update Brand Name
     a.btn.btn-block.btn-outline-dark.mg-20(href='/') Back to Home
