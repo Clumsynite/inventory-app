@@ -18,5 +18,6 @@ block content
         h1 This brand hasn't registered any items yet 
 
 
-    a.btn.btn-block.btn-outline-info.mg-20(href=`/brand/${brand._id}/update`) Update Brand Name
+    a.btn.btn-block.btn-outline-danger.mg-20(href=`/brand/${brand._id}/delete`) Delete #{brand.name}
+    a.btn.btn-block.btn-outline-info.mg-20(href=`/brand/${brand._id}/update`) Update #{brand.name}
     a.btn.btn-block.btn-outline-dark.mg-20(href='/') Back to Home
