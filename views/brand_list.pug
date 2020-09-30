@@ -1,6 +1,0 @@
-extends layout
-
-block content
-  div.list-group
-    each brand in brands
-      a.list-group-item.list-group-item-action.list-group-item-info(href=`/brand/${brand.name}/view`) #{brand.name}
