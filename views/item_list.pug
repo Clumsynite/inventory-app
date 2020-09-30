@@ -9,7 +9,8 @@ block content
           img.card-img-top(src=item.photo)
           div.card-body
             h5.card-title #{item.name}
-            p.text-muted #{item.brand.name}
+            p.text-muted           
+              a.text-info(href=`brand/${item.brand.name}/view`) #{item.brand.name}
             p.card-text #[Strong Price: ] #{item.price_formatted} INR
             p.card-text #[Strong Quantity: ] #{item.inStock}
           dv.card-footer
