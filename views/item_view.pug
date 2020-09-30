@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  div.card.text-center
+    div.card-header Sample Header would be a picture later
+    div.card-body
+      h5.card-title #{item.name}
+      p.text-muted           
+        a.text-info(href=`brand/${item.brand._id}/view`) #{item.brand.name}
+      p.card-text #[Strong Price: ] #{item.price_formatted} INR
+      p.card-text #[Strong Quantity: ] #{item.inStock}
+    dv.card-footer
+      a.btn.btn-outline-info.btn-block(href=`/item/${item._id}/view`) #{'View '+ item.item_name}
+    a.btn.btn-block.btn-outline-dark(href='/') Back to Home

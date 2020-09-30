@@ -18,7 +18,7 @@ exports.item_list = (req, res, next) => {
         return next(err);
       }
       res.render("item_list", {
-        title: "Items",
+        title: "View Items",
         item_list: data.items,
         brands: data.brands,
       });
@@ -27,5 +27,24 @@ exports.item_list = (req, res, next) => {
 };
 
 exports.item_view = (req, res, next) => {
-  
-}
+  async.parallel(
+    {
+      item: (callback) => {
+        Item.findById(req.params.id).populate("brand").exec(callback);
+      },
+      brands: (callback) => {
+        Brand.find({}, callback);
+      },
+    },
+    (err, data) => {
+      if (err) {
+        return next(err);
+      }
+      res.render("item_view", {
+        title: data.item.name,
+        item: data.item,
+        brands: data.brands,
+      });
+    }
+  );
+};
