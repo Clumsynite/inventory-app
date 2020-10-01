@@ -12,7 +12,7 @@ User can Create, Read, Update and Delete items and brands in the inventory.
 * Read only pages
 * Authenticated users can perform write tasks
 
-### [Live Version](https://clumsy-twitter.herokuapp.com/)
+### [Live Version](https://clumsy-inventory.herokuapp.com/)
 
 ## Commands
 
